@@ -53,7 +53,9 @@
     "angular-animate": "~1.4.8",
     "textAngular": "~1.4.6",
     "angular-xeditable": "~0.1.9",
-    "ng-js-tree": "~0.0.7"
+    "ng-js-tree": "~0.0.7",
+    "angular-ui-bootstrap-datetimepicker": "^2.0.3",
+    "mdPickers": "^0.7.5"
   },
   "resolutions": {
     "angular": "~1.4.8"

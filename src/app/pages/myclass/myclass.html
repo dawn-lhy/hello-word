@@ -1,0 +1,26 @@
+<div class="row" ng-controller="myclassCtrl as vm">
+    <div class="row">
+        <div class="col-xlg-12 col-lg-12 col-md-12 col-xs-12"
+             ba-panel
+             ba-panel-title="Calendar"
+             ba-panel-class="feed-comply-panel with-scroll calendar-panel">
+            <dashboard-calendar></dashboard-calendar>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12"
+             ba-panel
+             ba-panel-title="Pictures"
+             ba-panel-class="with-scroll">
+            <div ng-repeat="icon in icons.kameleonIcons">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="img-wrapper">
+                        <img ng-click="open('app/pages/ui/modals/modalTemplates/largeModal.html', 'lg',icon.img,icon.name)"
+                             ng-src="{{::( icon.img | appImage )}}">
+                        <p>{{icon.name}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

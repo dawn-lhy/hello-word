@@ -1,0 +1,102 @@
+<div class="row" ng-controller="newclassCtrl as vm">
+    <div class="col-md-12">
+        <div
+                ba-panel
+                ba-panel-title="New Class"
+                ba-panel-class="with-scroll">
+            <form>
+                <div class="form-group">
+                    <label>Class Name</label>
+                    <input type="text" class="form-control" ng-model="vm.className" placeholder="Class Name">
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <input type="text" class="form-control" ng-model="vm.description" placeholder="Description">
+                </div>
+                <div class="control-group">
+                    <label>Day</label>
+
+                    <li>
+                    <div class="control">
+                        <label class="checkbox-inline custom-checkbox nowrap">
+                            <input ng-model="vm.week.monday" type="checkbox" id="closeButton">
+                            <span>Monday</span>
+                        </label>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="control">
+                        <label class="checkbox-inline custom-checkbox nowrap">
+                            <input ng-model="vm.week.tuesday" type="checkbox" id="html">
+                            <span>Tuesday</span>
+                        </label>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="control">
+                        <label class="checkbox-inline custom-checkbox nowrap">
+                            <input ng-model="vm.week.wednesday" type="checkbox" id="progressBar">
+                            <span>Wednesday</span>
+                        </label>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="control">
+                        <label class="checkbox-inline custom-checkbox nowrap ">
+                            <input ng-model="vm.week.thursday" type="checkbox" id="preventDuplicates">
+                            <span>Thursday</span>
+                        </label>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="control">
+                        <label class="checkbox-inline custom-checkbox nowrap">
+                            <input ng-model="vm.week.friday" type="checkbox" id="preventOpenDuplicates">
+                            <span>Friday</span>
+                        </label>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="control">
+                        <label class="checkbox-inline custom-checkbox nowrap">
+                            <input ng-model="vm.week.saturday" type="checkbox" id="tapToDismiss">
+                            <span>Saturday</span>
+                        </label>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="control">
+                        <label class="checkbox-inline custom-checkbox nowrap">
+                            <input ng-model="vm.week.sunday" type="checkbox" id="newestOnTop">
+                            <span>Sunday</span>
+                        </label>
+                    </div>
+                    </li>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <h4 class="md-subhead">Start date</h4>
+                    <mdp-date-picker mdp-placeholder="Start Date" ng-model="vm.startDate"></mdp-date-picker>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <h4 class="md-subhead">End date</h4>
+                    <mdp-date-picker mdp-placeholder="Start Date" ng-model="vm.endDate"></mdp-date-picker>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <h4 class="md-subhead">Start Time</h4>
+
+                    <mdp-time-picker ng-model="vm.startTime"></mdp-time-picker>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <h4 class="md-subhead">End Time</h4>
+
+                    <mdp-time-picker ng-model="vm.endTime"></mdp-time-picker>
+                </div>
+
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <button type="submit" ng-click="vm.submitNewClass()" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
