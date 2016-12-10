@@ -1,48 +1,62 @@
-[![Build Status](https://travis-ci.org/akveo/blur-admin.svg?branch=master)](https://travis-ci.org/akveo/blur-admin)
+#README
 
-# BlurAdmin Angular admin panel front-end framework
+##How to run
+Install node.js
+[node.js download][1]
 
-Customizable admin panel framework made with :heart: by [Akveo team](http://akveo.com/). Follow us on [Twitter](https://twitter.com/akveo_inc) to get latest news about this template first!
+Install bower
+> $ npm install -g bower
 
-### Demo
-**[Mint version demo](http://akveo.com/blur-admin-mint/)**             |  **[Blur version demo](http://akveo.com/blur-admin/)**
-:-------------------------:|:-------------------------:
-![Mint version demo](http://i.imgur.com/A3TMviJ.png)  |  ![Blur version demo](http://i.imgur.com/EAoiK2O.jpg)
+Install lib
 
-## Angular 2 version
-Here you can find Angular2 based version: [ng2-admin](https://github.com/akveo/ng2-admin).
+> $ npm install
 
-### Documentation
-Installation, customization and other useful articles: https://akveo.github.io/blur-admin/
+> $ bower install
 
-*If you have problems installing and just want to download JS and css files, you can find download links here*: http://akveo.github.io/blur-admin/articles/091-downloads/
+Gulp
+> $ gulp serve
 
-## How can I support developers?
-- Star our GitHub repo
-- Create pull requests, submit bugs, suggest new features or documentation updates
-- Follow us on [Twitter](https://twitter.com/akveo_inc)
-- Like our page on [Facebook](https://www.facebook.com/akveo/)
+## Techniques,frameworks & libs
 
-## Can I hire you guys?
-Yes! We are available for hire. Visit [our homepage](http://akveo.com/) or simply leave us a note to contact@akveo.com. We will be happy to work with you!
+ - jquery
+ - angularjs
+ - bootstrap
+ - gulp
+ - sass
+ - fullcalendar
+ - mdPickers
+ 
+##system modules
+### sign in 
+    Sign in to My Note 
+![sign in][2]
+### login
+    login to My Note
+![login][3]
+### new class
+    Add new class
+![new class][4]
+![date picker][5]
+![time picker][6]
+### my class
+    show the classes & pictures
+![my class calendar][7]
+![pictures][8]
+![modal][9]
 
-## Features
-* Responsive layout
-* High resolution
-* Bootstrap CSS Framework
-* Sass
-* Gulp build
-* AngularJS
-* Jquery
-* Charts (amChart, Chartist, Chart.js, Morris)
-* Maps (Google, Leaflet, amMap)
-* etc
+## To do
+  Because of no APIs could used,all of the data saved in models in fornt end.In the signIn,login,newClass modules,if click the `submit` button , the models will log out in the console.U can send it through `service` easily if the APIs is done.
+  In my class moudle,U can get the group detail of the user and use the data to replace the model of newclassCtrl.the class will show in the calendar.
+  Once U click the event in the calendar,the datas of the calendar event will log out in the console,incude title or any other datas U want.you can use them to send it to the server through service to get the pictures.
+  After that,U can replace the url of pictures in the picture list through the $http call back function in the controller.
 
-License
--------------
-<a href=/LICENSE.txt target="_blank">MIT</a> license.
 
-### From akveo
-
-Enjoy!
-We're always happy to hear your feedback.
+  [1]: https://nodejs.org/en/download/
+  [2]: https://github.com/dawn-lhy/hello-word/tree/develop/example/sigin.png
+  [3]: https://github.com/dawn-lhy/hello-word/tree/develop/example/login.png
+  [4]: https://github.com/dawn-lhy/hello-word/tree/develop/example/new_class.png
+  [5]: https://github.com/dawn-lhy/hello-word/tree/develop/example/date_picker.png
+  [6]: https://github.com/dawn-lhy/hello-word/tree/develop/example/time_picker.png
+  [7]: https://github.com/dawn-lhy/hello-word/tree/develop/example/my_class_calendar.png
+  [8]: https://github.com/dawn-lhy/hello-word/tree/develop/example/my_class_pics.png
+  [9]: https://github.com/dawn-lhy/hello-word/tree/develop/example/my_class_modal.png
