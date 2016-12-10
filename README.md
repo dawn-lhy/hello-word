@@ -52,7 +52,7 @@ Gulp
 
 
   [1]: https://nodejs.org/en/download/
-  [2]: https://raw.githubusercontent.com/dawn-lhy/hello-word/develop/example/sigin.png
+  [2]: https://raw.githubusercontent.com/dawn-lhy/hello-word/develop/example/signin.png
   [3]: https://raw.githubusercontent.com/dawn-lhy/hello-word/develop/example/login.png
   [4]: https://raw.githubusercontent.com/dawn-lhy/hello-word/develop/example/new_class.png
   [5]: https://raw.githubusercontent.com/dawn-lhy/hello-word/develop/example/date_picker.png
